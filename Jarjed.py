@@ -55,6 +55,38 @@
 #	spisok.insert(i,a)
 #print(spisok)
 #3 задание
+#from random import *
+#spisok=[]
+#N=randint(2,20)
+#for i in range(N):
+#	spisok.append(randint(-50,50))
+#print(spisok)
+#while 1:
+#	try:
+#		k=int(input("С какой позиции начаинать - "))
+#		if k<=N//2:
+#			break
+#	except ValueError:
+#		print("Значение должно быть меньше, чем N//2")
+#k-=1
+#for i in range(k,-1,-1):
+#	print(spisok[i-1],end=" <-> ")
+#	print(spisok[N-i-1]) #print(spisok[-1*i])
+#	a=spisok.pop(i)
+#	spisok.insert(N-i-1-1,a)
+#	a=spisok.pop(N-i-1)
+#	spisok.insert(i,a)
+#print(spisok)
+#max=-50
+#for element in spisok:
+#	if element>max: max=element
+#new_max=max/N #/len(spisok)
+#ind=spisok.index(max)
+#spisok.remove(max)
+#spisok.insert(ind,new_max)
+#print(spisok)
+
+#4 задание
 from random import *
 spisok=[]
 N=randint(2,20)
@@ -85,3 +117,9 @@ ind=spisok.index(max)
 spisok.remove(max)
 spisok.insert(ind,new_max)
 print(spisok)
+spisok2=[]
+for e in spisok:
+	spisok2.append(abs(e))
+print(spisok2.sort())
+print(spisok2.sort(reverse=True))
+# 5 задание
